@@ -1,0 +1,9 @@
+.team-carousel-container {
+    position: relative;
+}
+.team-carousel-container-position {
+    position: absolute;
+}
+.team-carousel-container-item {
+    margin-right: 10px;
+}

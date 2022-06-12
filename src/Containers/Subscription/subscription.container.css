@@ -1,0 +1,12 @@
+.subscription-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscription-container-input {
+    width: 500px;
+    margin-right: 55px;
+    height: 33px;
+    margin-top: -22px;
+}

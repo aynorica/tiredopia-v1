@@ -1,0 +1,16 @@
+.partner-items-container {
+    width: 100%;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 1450px) {
+    .partner-items-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .partner-items-container-wrapper {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,19 @@
+.about-desc-container {
+    width: 100%;
+}
+.about-desc-container-btn {
+    margin-top: 50px;
+}
+
+
+
+@media only screen and (max-width: 1450px) {
+    .about-desc-container-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-desc-container-btn {
+        margin-top: 20px;
+    }
+}

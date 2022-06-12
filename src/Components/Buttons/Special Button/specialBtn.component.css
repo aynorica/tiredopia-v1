@@ -1,0 +1,119 @@
+.special-btn-component {
+    width: 180px;
+    height: 48px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.special-btn-text {
+    font-family: "Chakra Petch", sans-serif;
+    line-height: 28px;
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.special-btn-center {
+    width: 180px;
+    height: 48px;
+    position: absolute;
+}
+
+.special-btn-main {
+    width: 180px;
+    height: 48px;
+    cursor: pointer;
+    border: 2px solid #8ad7ff;
+    outline: none;
+    transition: 1s ease-in-out;
+    position: relative;
+}
+.special-btn-main-bg-green {
+    background-color: #94daff;
+}
+.special-btn-main-bg-green:hover {
+    background: transparent;
+}
+.special-btn-main-bg-transparent {
+    background: transparent;
+}
+.special-btn-main svg {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 0.5s ease-in-out;
+}
+
+.special-btn-main:hover {
+    transition: 0.5s ease-in-out;
+}
+
+.special-btn-main:hover > svg {
+    stroke-dasharray: 600 480;
+}
+.special-btn-logo {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    top: 14px;
+}
+.special-btn-logo svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+.special-btn-d-hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 620px) {
+    .special-btn-component {
+        width: 140px;
+    }
+    .special-btn-text {
+        font-family: "Chakra Petch", sans-serif;
+        line-height: 28px;
+        font-weight: 700;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .special-btn-d-responsive {
+        display: none;
+    }
+    .special-btn-d-hidden {
+        display: flex;
+    }
+    .special-btn-main {
+        width: 140px;
+        cursor: pointer;
+        border: 2px solid #14C2A3;
+    }
+    .special-btn-logo {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 10px;
+        top: 14px;
+    }
+    .special-btn-text {
+        font-family: "Chakra Petch", sans-serif;
+        line-height: 28px;
+        font-weight: 700;
+        font-size: 13px;
+        left: 40px;
+    }
+    .special-btn-center {
+        width: 140px;
+    }
+}

@@ -1,0 +1,12 @@
+.roadmap-container {
+    padding: 50px 0;
+    min-height: 600px;
+    width: 100%;
+}
+.roadmap-container-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px 50px 0;
+}

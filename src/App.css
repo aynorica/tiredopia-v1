@@ -1,0 +1,81 @@
+@keyframes loaded-up {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.load-up-animation {
+    animation: loaded-up 1s ease-in-out;
+}
+.anim-delay-1 {
+    animation-delay: 0.1s;
+}
+.anim-delay-2 {
+    animation-delay: 0.2s;
+}
+.anim-delay-3 {
+    animation-delay: 0.3s;
+}
+.anim-delay-4 {
+    animation-delay: 0.4s;
+}
+.anim-delay-5 {
+    animation-delay: 0.5s;
+}
+.anim-delay-6 {
+    animation-delay: 0.6s;
+}
+.anim-delay-7 {
+    animation-delay: 0.7s;
+}
+.anim-delay-8 {
+    animation-delay: 0.8s;
+}
+.anim-delay-9 {
+    animation-delay: 0.9s;
+}
+.anim-delay-10 {
+    animation-delay: 1s;
+}
+body {
+    /*background: #141A31 url("Assets/Backgrounds/bg-3.jpg");*/
+    /*background-size: cover;*/
+    overflow-x: hidden;
+    background-color: #111833;
+}
+
+.App {
+    width: 100%;
+}
+
+.d-relative {
+
+}
+
+.bg-color {
+    background-color: #0d1226;
+}
+
+.bg-nav-scroll {
+    background-color: #12172d;
+}
+
+.bg-team-color {
+    background-color: #141A31;
+}
+
+.bg-roadmap {
+    background: url(./Assets/Backgrounds/bg1roadmap1.png) center center no-repeat;
+    background-size: cover;
+    background-color: #0d1226;
+}
+
+@media only screen and (min-width: 1500px) {
+    .max-size {
+        max-width: 1450px;
+        margin: auto;
+        position: relative;
+    }
+}

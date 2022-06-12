@@ -1,0 +1,72 @@
+@keyframes roadmap-loading {
+    0% {
+        opacity: 0;
+        margin: 0 -60px;
+    }
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
+}
+.roadmap-special-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.roadmap-special-line-container {
+    width: 4px;
+}
+.roadmap-special-line {
+    width: 4px;
+    background-color: rgba(185, 185, 191, 0.77);
+    transition: 0.25s ease-in-out;
+}
+.roadmap-special-line > div {
+    width: 100%;
+    background-color: #94daff;
+    transition: 0.4s ease-in-out;
+}
+.roadmap-special-line-active {
+    background-color: #94daff;
+}
+.roadmap-special-container-component {
+    position: absolute;
+    animation: roadmap-loading 1.5s;
+}
+.connection-line {
+    position: absolute;
+}
+.connection-line > svg {
+    width: 115px;
+    height: 4px;
+    stroke: rgba(143, 143, 143, 0.72);
+    stroke-width: 4px;
+}
+.roadmap-connection-box {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(143, 143, 143);
+    position: absolute;
+}
+
+
+@media only screen and (max-width: 1450px) {
+    .roadmap-special-line {
+        display: none;
+    }
+    .connection-line {
+        display: none;
+    }
+    .roadmap-connection-box {
+        display: none;
+    }
+    .roadmap-special-container-component {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

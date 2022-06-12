@@ -1,0 +1,22 @@
+.social-container {
+    display: flex;
+    min-height: 80px;
+    justify-content: center;
+}
+.social-container svg {
+    width: 30px;
+    height: 30px;
+}
+.social-container path {
+    transition: 0.3s ease-in-out;
+}
+.social-container-svg:hover path {
+    fill: #94daff;
+}
+.social-container-opensea svg {
+    width: 35px;
+    height: 35px;
+}
+.social-container-svg {
+    padding: 14px;
+}

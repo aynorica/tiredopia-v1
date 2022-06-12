@@ -1,0 +1,14 @@
+.about-component-header {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1450px) {
+    .about-component-header {
+        margin: 0;
+        font-size: 34px;
+    }
+}

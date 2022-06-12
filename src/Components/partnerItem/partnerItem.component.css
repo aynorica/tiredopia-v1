@@ -1,0 +1,47 @@
+.partner-item-component {
+    width: 349px;
+    height: 229px;
+    border: 1px solid rgba(148, 218, 255, 0.08);
+    background-color: rgba(148, 218, 255, 0.1);
+    transition: 0.6s ease-in-out;
+    position: relative;
+    margin-right: 15px;
+}
+.partner-item-header {
+    font-family: 'Chakra Petch',sans-serif;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    cursor: default;
+}
+.partner-item-text {
+    font-family: 'IBM Plex Mono',monospace;
+    font-size: 17px;
+    color: #B9B9BF;
+    font-weight: 400;
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    cursor: default;
+}
+.partner-item-component svg {
+    width: 350px;
+    height: 230px;
+    stroke: #76b2d2;
+    stroke-width: 4px;
+    fill: none;
+    stroke-dasharray: 50 1820;
+    stroke-dashoffset: -205;
+    transition: 0.5s ease-in-out;
+}
+.partner-item-component:hover svg {
+    stroke: #94daff;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1000 1820;
+}
+.partner-item-component:hover {
+    box-shadow: 0 0px 32px 0 rgba(148, 218, 255, 0.5);
+}

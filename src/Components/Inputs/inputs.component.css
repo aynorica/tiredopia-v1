@@ -1,0 +1,8 @@
+.normal-input-component {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #F806CC;
+    padding: 10px;
+    font-size: 17px;
+}

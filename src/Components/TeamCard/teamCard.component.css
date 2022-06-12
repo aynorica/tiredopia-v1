@@ -1,0 +1,54 @@
+.team-card-component {
+    width: 350px;
+    background: rgba(148, 218, 255, 0.1);
+    border: 2px solid rgba(148, 218, 255, 0.9);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    transition: all 0.3s ease-in-out;
+}
+.team-card-component:hover {
+    border-radius: 5px;
+    box-shadow: rgba(148, 218, 255, 0.9);
+}
+.team-card-component-img {
+    width: 350px;
+    height: 350px;
+    grid-column: span 2;
+}
+.team-card-component-header {
+    font-family: "Wallpoet",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.team-card-component-text {
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: #B9B9BF;
+    margin-top: 10px;
+}
+.team-card-component-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: right;
+    margin-top: 5px;
+}
+.team-card-component-social a {
+    background: rgba(148, 218, 255, 0.4);
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.team-card-component-social a:hover {
+    background: rgba(148, 218, 255, 0.7);
+}
+.team-card-component-social svg {
+    width: 30px;
+    height: 30px;
+}

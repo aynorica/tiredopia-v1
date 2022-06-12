@@ -1,0 +1,23 @@
+.subnav-component {
+
+}
+.subnav-component a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.subnav-component:hover a {
+    color: #94daff;
+    text-shadow: -1px 9px 3px #71a7c4;
+}
+
+.subnav-component-hovered a {
+    color: #94daff!important;
+    text-shadow: -1px 9px 3px #71a7c4;
+}

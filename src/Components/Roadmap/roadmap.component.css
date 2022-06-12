@@ -1,0 +1,78 @@
+.roadmap-component {
+    width: 400px;
+    height: 200px;
+    overflow-y: scroll;
+    position: relative;
+    background-color: #13182b;
+}
+
+.roadmap-component::-webkit-scrollbar {
+    display: none;
+}
+
+.roadmap-component-box {
+    width: 400px;
+    height: 200px;
+    stroke: rgba(148, 218, 255, 0.9);
+    stroke-width: 4px;
+    fill: none;
+    stroke-dasharray: 240 800;
+    stroke-dashoffset: -180;
+    transition: 0.25s ease-in-out;
+}
+
+.roadmap-component:hover .roadmap-component-box{
+    stroke: #94daff;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 600 800;
+}
+.roadmap-component:hover {
+    box-shadow: 0 0px 32px 0 rgba(148, 218, 255, 0.5);
+}
+.roadmap-component-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: "Chakra Petch",sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+.roadmap-component-list {
+    position: absolute;
+    top: 60px;
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 17px;
+    font-weight: 400;
+    color: #B9B9BF;
+}
+.roadmap-component-box-350 {
+    display: none;
+}
+
+@media only screen and (max-width: 1450px) {
+    .roadmap-component {
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .roadmap-component {
+        width: 350px;
+    }
+    .roadmap-component-box-350 {
+        display: block;
+    }
+    .roadmap-component-box-400 {
+        display: none;
+    }
+    .roadmap-component-header {
+        font-size: 24px;
+    }
+    .roadmap-component-list {
+        font-size: 14px;
+    }
+    .roadmap-component-box {
+        stroke-dasharray: 300 1150;
+        stroke-dashoffset: 300;
+    }
+}

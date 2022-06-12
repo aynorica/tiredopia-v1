@@ -1,0 +1,26 @@
+.partner-dec-header {
+    font-family: "Chakra Petch",sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 17px;
+}
+.partner-dec-sub-header {
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 17px;
+    font-weight: 400;
+    color: #B9B9BF;
+    max-width: 600px;
+}
+
+@media only screen and (max-width: 1450px) {
+    .partner-dec-header {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 36px;
+    }
+    .partner-dec-sub-header {
+        text-align: center;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,27 @@
+.partner-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: left;
+    transition: all 0.3s;
+    padding-bottom: 60px;
+    grid-gap: 40px;
+}
+.partner-container-margin{
+    margin-top: 50px;
+}
+.partner-container-title {
+    grid-column: span 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1450px) {
+    .partner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,21 @@
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+.faq-container-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.faq-container-title {
+    text-align: center;
+}
+.faq-component-container {
+    display: grid;
+    justify-content: center;
+}

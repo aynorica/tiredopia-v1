@@ -1,0 +1,54 @@
+.nft-utils-component {
+    width: 100px;
+    border: 1px solid rgba(97, 197, 248, 0.18);
+    min-width: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 42px;
+    transition: all 0.4s;
+    overflow: hidden;
+    background-color: #0e2230;
+}
+.nft-utils-component:hover {
+    border: 1px solid rgba(97, 197, 248, 0.75);
+}
+.nft-utils-component:hover .nft-utils-component-default {
+    color: rgba(138, 215, 255, 1);
+}
+.nft-utils-component-default {
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 17px;
+    color: rgba(138, 215, 255, 0.70);
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    border-bottom: 1px solid rgba(138, 215, 255, 0.12);
+    padding: 10px;
+}
+.nft-utils-arrow {
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.nft-utils-arrow svg {
+    width: 20px;
+    height: 10px;
+    stroke: #8ad7ff;
+    fill: none;
+    stroke-width: 3px;
+}
+.nft-utils-component-item {
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 17px;
+    color: rgba(138, 215, 255, 0.70);
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 1px solid rgba(138, 215, 255, 0.06);
+    transition: all 0.2s ease-in-out;
+}
+.nft-utils-component-item:hover {
+    color: #0d1226;
+    background-color: #7abcde;
+}

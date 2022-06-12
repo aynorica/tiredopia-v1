@@ -1,0 +1,47 @@
+.team-desc-header-component {
+    font-family: "Chakra Petch",sans-serif;
+    font-size: 44px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.team-desc-sub-header-component {
+    font-family: "Chakra Petch",sans-serif;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.team-desc-text-component {
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 17px;
+    color: #B9B9BF;
+    font-weight: 400;
+}
+.team-desc-btn-component {
+    width: 50px;
+    height: 50px;
+    stroke: #20c997;
+    stroke-width: 1px;
+    fill: none;
+}
+
+.team-desc-btn-component > svg {
+    width: 50px;
+    height: 500px;
+    stroke: white;
+    stroke-width: 3px;
+    fill: none;
+}
+.svg-hover-effect {
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.svg-hover-effect-active {
+    background-color: #20c997;
+}
+.svg-hover-effect:hover {
+    background-color: #20c997;
+}

@@ -1,0 +1,13 @@
+.intro-description-btn-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 400px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 620px) {
+    .intro-description-btn-container {
+        max-width: 300px;
+    }
+}

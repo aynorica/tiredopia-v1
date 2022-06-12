@@ -1,0 +1,12 @@
+.background {
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url("../../Assets/Backgrounds/wp7632973.webp");
+    background-size: cover;
+    background-position-y: -100px;
+}

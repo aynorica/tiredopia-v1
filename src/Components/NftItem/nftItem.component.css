@@ -1,0 +1,56 @@
+@keyframes visibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.nft-item-component-hidden {
+    display: none;
+    animation: visibility 1s;
+}
+.nft-item-component-brief {
+
+}
+.nft-item-component {
+    border: 2px solid rgba(148, 218, 255, 0.34);
+    background-color: #0e2230;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px 10px 10px 10px;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+    animation: visibility 1s;
+    width: 310px;
+}
+.nft-item-component:hover {
+    border: 2px solid rgba(148, 218, 255, 0.8);
+    background-color: #0d283b;
+}
+.nft-item-component img {
+    width: 300px;
+}
+.nft-item-component-persona {
+    margin: 10px 0 0 0;
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #B9B9BF;
+    text-align: left;
+}
+.nft-item-component-header {
+    font-family: "Wallpoet",sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+.nft-details-container {
+    height: 100%;
+}

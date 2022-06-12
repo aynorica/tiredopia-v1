@@ -1,0 +1,15 @@
+.faq-intro-component {
+    font-family: "Chakra Petch",sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .faq-intro-component {
+        font-size: 26px;
+    }
+}

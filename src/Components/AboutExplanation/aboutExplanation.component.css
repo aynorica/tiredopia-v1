@@ -1,0 +1,122 @@
+.about-explanation-component {
+    width: 740px;
+    height: 170px;
+    background: rgba(148, 218, 255, 0.11);
+    border: 1px solid rgba(16, 82, 82, 0.11);
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.about-explanation-component-header {
+
+}
+
+.about-explanation-component svg {
+    width: 740px;
+    height: 170px;
+    stroke: #94daff;
+    stroke-width: 4px;
+    fill: none;
+    stroke-dasharray: 50 1820;
+    stroke-dashoffset: -145;
+    transition: 0.5s ease-in-out;
+}
+
+
+.about-explanation-component:hover svg {
+    stroke: #78cefc;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1000 1820;
+}
+.about-explanation-component:hover {
+    box-shadow: 0 0px 32px 0 rgba(148, 218, 255, 0.52);
+}
+.about-explanation-component h5 {
+    position: absolute;
+    top: -22px;
+    left: 20px;
+    font-family: "Chakra Petch",sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+    cursor: default;
+}
+.about-explanation-component h6 {
+    position: absolute;
+    top:25px;
+    left: 20px;
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 17px;
+    font-weight: 400;
+    color: #B9B9BF;
+    cursor: default;
+}
+
+.about-explanation-component-width-500 {
+    display: none;
+}
+.about-explanation-component-width-350 {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+    .about-explanation-component svg {
+        width: 500px;
+        height: 200px;
+        stroke-dasharray: 50 1820;
+        stroke-dashoffset: -175;
+    }
+    .about-explanation-component {
+        width: 500px;
+        height: 200px;
+    }
+    .about-explanation-component-width-740 {
+        display: none;
+    }
+    .about-explanation-component-width-500 {
+        display: block;
+    }
+    .about-explanation-component h6 {
+        position: absolute;
+        padding-right: 20px;
+        cursor: default;
+        overflow-y: scroll;
+    }
+    .about-explanation-component h6::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-explanation-component svg {
+        width: 350px;
+        height: 150px;
+        stroke-dasharray: 50 1820;
+        stroke-dashoffset: -125;
+    }
+    .about-explanation-component {
+        width: 350px;
+        height: 150px;
+    }
+    .about-explanation-component-width-740 {
+        display: none;
+    }
+    .about-explanation-component-width-500 {
+        display: none;
+    }
+    .about-explanation-component-width-350 {
+        display: block;
+    }
+    .about-explanation-component h6 {
+        font-size: 14px;
+        top: 14px;
+    }
+    .about-explanation-component h5 {
+        font-size: 17px;
+        top: -15px;
+    }
+    .about-explanation-component h6::-webkit-scrollbar {
+        display: none;
+    }
+}

@@ -1,0 +1,32 @@
+@keyframes moving {
+    0% {
+        right: 0;
+        bottom: 0;
+    }
+    50% {
+        right: -30px;
+        bottom: -15px;
+    }
+    100% {
+        right: 0;
+        bottom: 0;
+    }
+
+}
+
+.introPic-component {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: scale(1.2);
+}
+.introPic-component img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -40px;
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

@@ -1,0 +1,7 @@
+.carousel-team-component {
+    width: 300px;
+    height: 400px;
+    background-color: #0d1226;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}

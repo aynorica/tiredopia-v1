@@ -1,0 +1,42 @@
+.nft-details-component {
+    display: flex;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(138, 215, 255, 0.16);
+    height: 100%;
+}
+.nft-details-component-attributes-title {
+    font-family: "Chakra Petch",sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+}
+.nft-details-attribute {
+    color: white;
+    list-style-type: none;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.trait {
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+.trait-value {
+    font-family: "Wallpoet",sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #8ad7ff;
+    padding-left: 10px;
+}
+.nft-details-component-others {
+    margin-left: 40px;
+}
+.nft-details-component-attributes {
+    min-width: 400px;
+}
