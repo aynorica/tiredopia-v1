@@ -75,7 +75,7 @@ const SpecialBoxComponent:React.FC<SpecialBoxComponentInput> = (data:SpecialBoxC
     const side:boolean = index % 2 === 0;
     const topOffset:number = index * 170;
     let style:any = {}
-    style[`${side ? 'left' : 'right'}`] = '15%';
+    style[`${side ? 'left' : 'right'}`] = '16.15%';
     style['top'] = `${topOffset}px`;
     return <div className="roadmap-special-container-component" style={style}>
         <RoadmapComponent header={data.header} listEl={data.listEl} />

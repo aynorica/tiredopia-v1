@@ -1,8 +1,8 @@
 import React from "react";
 import './roadmap.container.css';
-import {RoadmapComponentInputs} from "../../Components/Roadmap/roadmap.component";
+import {RoadmapComponentInputs, RoadmapDescComponent} from "../../Components/Roadmap/roadmap.component";
 import {RoadmapSpecialContainer} from "../RoadmapSpecial/roadmapSpecial.container";
-import {TitleComponent} from "../../Components/Title/title.component";
+import {TitleComponent, TitleSmallComponent} from "../../Components/Title/title.component";
 
 
 export const RoadmapContainer:React.FC = () => {
@@ -10,7 +10,10 @@ export const RoadmapContainer:React.FC = () => {
         <div className="bg-roadmap">
             <div className="roadmap-container max-size">
                 <div className="roadmap-container-title">
-                    <TitleComponent text={"ROADMAP"}/>
+                    <TitleSmallComponent text={"ROADMAP"} />
+                </div>
+                <div className="roadmap-container-desc">
+                    <RoadmapDescComponent />
                 </div>
                 <RoadmapSpecialContainer items={items} doneCount={1}/>
             </div>

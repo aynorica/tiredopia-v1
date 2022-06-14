@@ -1,0 +1,11 @@
+.page-title-component {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Chakra Petch", monospace;
+    font-size: 56px;
+    font-weight: 700;
+    padding-top: 140px;
+    text-align: center;
+    padding-bottom: 80px;
+    margin: 0;
+}

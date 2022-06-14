@@ -1,33 +1,32 @@
 import React from "react";
 import './aboutExplanation.component.css';
+import './aboutExplainationBorder.component.css';
 
 export interface AboutExplanationComponentInput {
     header:string,
-    text:string
+    text:string,
+    active: boolean,
+    main?:boolean
 }
 
 export const AboutExplanationComponent:React.FC<AboutExplanationComponentInput> = (data:AboutExplanationComponentInput) => {
-    const { text, header } = data;
+    const { text, header, active, main } = data;
     return (
-        <div className="about-explanation-component">
+        <div className={`about-explanation-component ${active ? "about-explanation-component-active" : null} ${main ? "about-explanation-component-main" : null}`}>
             <h5>
                 {header}
             </h5>
             <h6>
                 {text}
             </h6>
-            <svg className="about-explanation-component-width-740">
-                <polyline points="0,170 0,0 740,0"/>
-                <polyline points="740,0 740,170 0,170"/>
-            </svg>
-            <svg className="about-explanation-component-width-500">
-                <polyline points="0,200 0,0 500,0"/>
-                <polyline points="500,0 500,200 0,200"/>
-            </svg>
-            <svg className="about-explanation-component-width-350">
-                <polyline points="0,150 0,0 350,0"/>
-                <polyline points="350,0 350,150 0,150"/>
-            </svg>
+            <div id={"about-b-h-1"} className={`about-custom-border-horizontal ${active ? "about-custom-border-horizontal-active" : null}`}></div>
+            <div id={"about-b-h-2"} className={`about-custom-border-horizontal ${active ? "about-custom-border-horizontal-active" : null}`}></div>
+            <div id={"about-b-h-3"} className={`about-custom-border-horizontal ${active ? "about-custom-border-horizontal-active" : null}`}></div>
+            <div id={"about-b-h-4"} className={`about-custom-border-horizontal ${active ? "about-custom-border-horizontal-active" : null}`}></div>
+            <div id={"about-b-v-1"} className={`about-custom-border-vertical ${active ? "about-custom-border-vertical-active" : null}`}></div>
+            <div id={"about-b-v-2"} className={`about-custom-border-vertical ${active ? "about-custom-border-vertical-active" : null}`}></div>
+            <div id={"about-b-v-3"} className={`about-custom-border-vertical ${active ? "about-custom-border-vertical-active" : null}`}></div>
+            <div id={"about-b-v-4"} className={`about-custom-border-vertical ${active ? "about-custom-border-vertical-active" : null}`}></div>
         </div>
     )
 }

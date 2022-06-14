@@ -12,15 +12,12 @@ export const AboutContainer:React.FC<AboutContainerInputs> = (data:AboutContaine
     const { main } = data;
     return (
         <div className="bg-color" >
-            <div className="max-size about-container">
-                <div className="about-container-title">
-                    <TitleComponent text={"about us"}/>
-                </div>
+            <div className={`max-size ${main ? "about-container" : "about-container-page"}`}>
                 <div className="about-container-desc">
-                    <AboutDescContainer />
+                    <AboutDescContainer main={main}/>
                 </div>
                 <div>
-                    <AboutExplanationContainer />
+                    <AboutExplanationContainer main={main}/>
                 </div>
             </div>
         </div>

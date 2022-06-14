@@ -1,6 +1,8 @@
 .carousel-container {
     max-width: 1980px;
-    padding-bottom: 20px;
+}
+.carousel-container > div {
+    width: 100vw;
 }
 .carousel-item {
     margin: 15px;

@@ -50,6 +50,13 @@
     display: none;
 }
 
+.roadmap-desc-component {
+    font-family: "Chakra Petch",sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: white;
+}
+
 @media only screen and (max-width: 1450px) {
     .roadmap-component {
         margin-bottom: 30px;

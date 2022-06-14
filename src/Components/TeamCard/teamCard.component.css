@@ -1,6 +1,6 @@
 .team-card-component {
     width: 350px;
-    background: rgba(148, 218, 255, 0.1);
+    background: rgba(115, 197, 241, 0.1);
     border: 2px solid rgba(148, 218, 255, 0.9);
     padding: 10px;
     display: grid;
@@ -8,8 +8,9 @@
     transition: all 0.3s ease-in-out;
 }
 .team-card-component:hover {
+    margin-top: -30px;
     border-radius: 5px;
-    box-shadow: rgba(148, 218, 255, 0.9);
+    box-shadow: 0 0px 25px 0 rgba(125, 196, 234, 0.68);
 }
 .team-card-component-img {
     width: 350px;

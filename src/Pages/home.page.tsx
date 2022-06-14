@@ -14,8 +14,14 @@ export const HomePage:React.FC = () => {
         <>
             <IntroContainer />
             <AboutContainer main={true}/>
-            <CarouselContainer transition={900} interval={1500}/>
-            <CarouselContainer transition={1300} interval={2500}/>
+            <div className="bg-color" style={{paddingBottom: '20px'}}>
+                <div className="bg-color">
+                    <CarouselContainer transition={1400} interval={2500}/>
+                </div>
+                <div style={{marginTop: '-85px'}}>
+                    <CarouselContainer transition={1700} interval={3500}/>
+                </div>
+            </div>
             <RoadmapContainer />
             <PartnershipContainer />
             {/*<TeamContainer />*/}

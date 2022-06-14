@@ -4,15 +4,13 @@ import {TitleComponent} from "../../Components/Title/title.component";
 import {NftSearchComponent} from "../../Components/NftSearch/nftSearch.component";
 import {NftUtilsComponent, NftUtilsComponentInput} from "../../Components/NftUtils/nftUtils.component";
 import {NftItemComponent, NftItemComponentModel} from "../../Components/NftItem/nftItem.component";
+import {nftItems} from "../Carousel/carousel.container";
 
 
 export const NftTableContainer:React.FC = () => {
     return (
         <div className="bg-color">
             <div className="nft-container max-size">
-                <div className="nft-container-title">
-                    <TitleComponent text={"NFT ITEM'S"}/>
-                </div>
                 <div className="nft-container-utils">
                     <div className="nft-container-search">
                         <NftSearchComponent searchFunction={() => {}}/>
@@ -25,7 +23,9 @@ export const NftTableContainer:React.FC = () => {
                 </div>
                 <div className="nft-container-items">
                     {
-                        NftItems.map(nft => {
+                        NftItems.map((nft, index) => {
+                            nft.image = nftItems[index].img;
+                            nft.name = nftItems[index].name;
                             return <NftItemComponent items={nft}/>
                         })
                     }

@@ -6,11 +6,13 @@
     justify-items: center;
     padding-top: 20px;
     padding-bottom: 40px;
+    transform: scale(0.9);
 }
 
 .about-team-title {
     grid-column: span 4;
-    margin-bottom: 40px;
+    justify-self: left;
+    margin-bottom: 10px;
 }
 @media only screen and (max-width: 1450px) {
     .about-team-container {

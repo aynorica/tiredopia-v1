@@ -15,9 +15,7 @@ function App() {
     <div className="App">
 
         <Router>
-            <div className={"d-relative max-size"}>
-                <NavbarContainer />
-            </div>
+            <NavbarContainer />
             <Routes>
                 <Route path={"/"} element={<Suspense fallback={<LoadingContainer />}><HomePage /></Suspense>}/>
                 <Route path={"/home"} element={<Suspense fallback={<LoadingContainer />}><HomePage /></Suspense>}/>

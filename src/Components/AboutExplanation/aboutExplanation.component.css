@@ -1,35 +1,24 @@
 .about-explanation-component {
-    width: 740px;
+    width: 65vw;
     height: 170px;
     background: rgba(148, 218, 255, 0.11);
     border: 1px solid rgba(16, 82, 82, 0.11);
     transition: 0.5s ease-in-out;
     position: relative;
 }
-
+.about-explanation-component-active {
+    box-shadow: 0 0 25px 0 rgba(148, 218, 255, 0.52);
+}
 .about-explanation-component-header {
 
 }
 
-.about-explanation-component svg {
+.about-explanation-component-main {
     width: 740px;
-    height: 170px;
-    stroke: #94daff;
-    stroke-width: 4px;
-    fill: none;
-    stroke-dasharray: 50 1820;
-    stroke-dashoffset: -145;
-    transition: 0.5s ease-in-out;
 }
 
-
-.about-explanation-component:hover svg {
-    stroke: #78cefc;
-    stroke-dashoffset: 0;
-    stroke-dasharray: 1000 1820;
-}
 .about-explanation-component:hover {
-    box-shadow: 0 0px 32px 0 rgba(148, 218, 255, 0.52);
+    box-shadow: 0 0 25px 0 rgba(148, 218, 255, 0.52);
 }
 .about-explanation-component h5 {
     position: absolute;

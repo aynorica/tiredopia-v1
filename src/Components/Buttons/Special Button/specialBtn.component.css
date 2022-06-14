@@ -42,31 +42,18 @@
 .special-btn-main-bg-transparent {
     background: transparent;
 }
-.special-btn-main svg {
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    fill: none;
-    stroke: white;
-    stroke-width: 2px;
-    stroke-dasharray: 150 480;
-    stroke-dashoffset: 150;
-    transition: 0.5s ease-in-out;
-}
+
 
 .special-btn-main:hover {
     transition: 0.5s ease-in-out;
 }
 
-.special-btn-main:hover > svg {
-    stroke-dasharray: 600 480;
-}
 .special-btn-logo {
     width: 20px;
     height: 20px;
     position: absolute;
     left: 20px;
-    top: 14px;
+    top: 12px;
 }
 .special-btn-logo svg {
     width: 20px;
@@ -97,7 +84,7 @@
     .special-btn-main {
         width: 140px;
         cursor: pointer;
-        border: 2px solid #14C2A3;
+        border: 2px solid #94daff;
     }
     .special-btn-logo {
         width: 20px;

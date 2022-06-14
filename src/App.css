@@ -43,7 +43,7 @@ body {
     /*background: #141A31 url("Assets/Backgrounds/bg-3.jpg");*/
     /*background-size: cover;*/
     overflow-x: hidden;
-    background-color: #111833;
+    background-color: #12172d;
 }
 
 .App {
@@ -74,7 +74,7 @@ body {
 
 @media only screen and (min-width: 1500px) {
     .max-size {
-        max-width: 1450px;
+        max-width: 1500px;
         margin: auto;
         position: relative;
     }

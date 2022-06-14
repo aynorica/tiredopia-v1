@@ -13,3 +13,12 @@ export const TitleComponent:React.FC<TitleComponent> = (data:TitleComponent) => 
         </div>
     )
 }
+
+export const TitleSmallComponent:React.FC<TitleComponent> = (data:TitleComponent) => {
+    const {text} = data;
+    return (
+        <div className="title-small-component">
+            {text}
+        </div>
+    )
+}

@@ -1,13 +1,26 @@
 .title-component {
     text-transform: uppercase;
-    color: #94daff;
+    color: white;
     font-family: "Chakra Petch", monospace;
     font-size: 56px;
     font-weight: 700;
 }
 
+.title-small-component {
+    text-transform: uppercase;
+    color: #94daff;
+    font-family: "Chakra Petch", monospace;
+    font-size: 20px;
+    font-weight: 700;
+}
+@media only screen and (max-width: 1450px) {
+    .title-small-component {
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 650px) {
     .title-component {
         font-size: 44px;
     }
+
 }

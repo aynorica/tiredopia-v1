@@ -2,10 +2,24 @@
     width: 100%;
 }
 .about-desc-container-btn {
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 15px;
 }
 
-
+.about-desc-title {
+    margin: 3px 0;
+}
+.about-center {
+    display: flex;
+    justify-content: center;
+}
+.about-center > h2 {
+    text-align: center;
+}
+.about-btn-hidden {
+    display: none;
+}
 
 @media only screen and (max-width: 1450px) {
     .about-desc-container-center {

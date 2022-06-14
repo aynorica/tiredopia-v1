@@ -14,21 +14,23 @@ export const NavbarContainer:React.FC = () => {
     }
     window.addEventListener("scroll", setting);
     return (
-        <div className={`nav-container max-size ${scroll ? "bg-nav-scroll": null}`}>
-            <div className="nav-item nav-item-logo">
-                <LogoComponents />
-            </div>
-            <div className="nav-item-hidden nav-item nav-item-center">
-                <SubnavContainer />
-            </div>
-            <div className="nav-item-social nav-item nav-item-right">
-                <SpecialBtnComponent text={"follow us"} link={"#"} fill={false} icon={<TwitterLogoSvg />} scale={1} />
-            </div>
-            <div className="nav-item-subnav-responsive">
-                <SubnavResponsiveContainer />
+        <div className={`nav-wrapper nav-wrapper-position ${scroll ? "nav-wrapper-bg" : null}`}>
+            <div className={`nav-container max-size`}>
+                <div className="nav-item nav-item-logo">
+                    <LogoComponents />
+                </div>
+                <div className="nav-item-hidden nav-item nav-item-center">
+                    <SubnavContainer />
+                </div>
+                <div className="nav-item-social nav-item nav-item-right">
+                    <SpecialBtnComponent text={"follow us"} link={"#"} fill={false} icon={<TwitterLogoSvg />} scale={1} />
+                </div>
+                <div className="nav-item-subnav-responsive">
+                    <SubnavResponsiveContainer />
+                </div>
             </div>
         </div>
-
     )
+
 }
 

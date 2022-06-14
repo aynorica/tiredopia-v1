@@ -5,18 +5,17 @@
     grid-template-columns: 1fr 1fr;
     transition: all 0.3s;
     padding-bottom: 60px;
-    padding-left: 10px;
     overflow-x: hidden;
+    padding-top: 80px;
 }
-.about-container-title {
-    grid-column: span 2;
+.about-container-page {
+    padding-top: 0;
+    padding-bottom: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 50px 0;
-    animation: loaded-up 1s ease-in-out;
+    justify-content: center;
 }
-
 @media only screen and (max-width: 1650px) {
     .about-container {
         max-width: 1450px;
@@ -24,6 +23,8 @@
 }
 @media only screen and (max-width: 1450px) {
     .about-container {
+        padding-top: 0;
+        padding-bottom: 0;
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -9,7 +9,9 @@
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
-
+.faq-component-active {
+    box-shadow: 0 0px 32px 0 rgba(148, 218, 255, 0.5);
+}
 .faq-component-cover {
     width: 740px;
     height: 100px;
@@ -76,6 +78,10 @@
     right: 20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+}
+.faq-arrow-container-active {
+    top: 50px;
+    transform: rotate(180deg);
 }
 .faq-component:hover .faq-component-arrow {
     stroke: #94daff!important;

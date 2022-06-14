@@ -33,3 +33,11 @@ export const RoadmapComponent:React.FC<RoadmapComponentInputs> = (data:RoadmapCo
         </div>
     )
 }
+
+export const RoadmapDescComponent:React.FC = () => {
+    return (
+        <div className="roadmap-desc-component">
+            TIREDOPIA TIMELINE
+        </div>
+    )
+}
