@@ -1,0 +1,20 @@
+.text-area-component {
+
+}
+.text-area-component textarea {
+    transition: all 0.3s ease;
+    height: 145px;
+    background: transparent;
+    border: 1px solid rgba(97, 197, 248, 0.18);
+    border-radius: 5px;
+    font-family: "IBM Plex Mono",monospace;
+    font-size: 17px;
+    color: #14C2A3;
+    padding-left: 10px;
+    padding-top: 15px;
+    width: 100%;
+}
+.text-area-component textarea:focus {
+    outline: #8ad7ff;
+    border: 1px solid rgba(97, 197, 248, 1);
+}

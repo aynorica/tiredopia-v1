@@ -7,14 +7,15 @@ export interface SpecialBtnInput {
     text:string,
     fill: boolean,
     icon?: ReactNode,
+    func?: any,
     scale: number
 }
 
 export const SpecialBtnComponent:React.FC<SpecialBtnInput> = (data:SpecialBtnInput) => {
-    const { text, link, icon, fill, scale } = data;
+    const { text, link, icon, fill, scale, func } = data;
     const bg:string = `${fill ? "special-btn-main-bg-green" : "special-btn-main-bg-transparent"}`
     return (
-        <>
+        <div onClick={() => func()}>
             <a href={link} className="special-btn-component special-btn-d-hidden" style={{transform: `scale(${scale})`}}>
                 <div className="special-btn-center">
                     <div id={"b-h-1"} className="special-btn-custom-border-horizontal"></div>
@@ -29,7 +30,7 @@ export const SpecialBtnComponent:React.FC<SpecialBtnInput> = (data:SpecialBtnInp
                         <span className="special-btn-logo">
                             {icon}
                         </span>
-                        <span className="special-btn-text">{text}</span>
+                        <span className={`special-btn-text`}>{text}</span>
                     </button>
                 </div>
             </a>
@@ -51,6 +52,6 @@ export const SpecialBtnComponent:React.FC<SpecialBtnInput> = (data:SpecialBtnInp
                     </button>
                 </div>
             </a>
-        </>
+        </div>
     )
 }

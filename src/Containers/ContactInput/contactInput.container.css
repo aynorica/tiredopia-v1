@@ -1,0 +1,12 @@
+.contact-input-container {
+    min-width: 700px;
+}
+.contact-input-item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 800px) {
+    .contact-input-container {
+        min-width: 370px;
+    }
+}

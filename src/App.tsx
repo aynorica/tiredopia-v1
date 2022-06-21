@@ -9,6 +9,7 @@ import {FooterContainer} from "./Containers/Footer/footer.container";
 import {RoadmapPage} from "./Pages/Roadmap/roadmap.page";
 import {NftTableContainer} from "./Containers/Nft/nftTable.container";
 import {NftPage} from "./Pages/Nft/nft.page";
+import {ContactPage} from "./Pages/Contact/contact.page";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path={"/about"} element={<Suspense fallback={<LoadingContainer />}><AboutPage /></Suspense>} />
                 <Route path={"/road-map"} element={<Suspense fallback={<LoadingContainer />}><RoadmapPage /></Suspense>} />
                 <Route path={"/nft"} element={<Suspense fallback={<LoadingContainer />}><NftPage /></Suspense>} />
+                <Route path={"/contact"} element={<Suspense fallback={<LoadingContainer />}><ContactPage /></Suspense>} />
             </Routes>
         </Router>
         <FooterContainer />

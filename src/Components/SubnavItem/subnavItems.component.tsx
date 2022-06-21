@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 export const SubnavItemsComponent:React.FC<SubnavItemsInputsModel> = (data:SubnavItemsInputsModel) => {
     const { text, link, setUri, active } = data;
     return (
-        <div className={`subnav-component ${active ? 'subnav-component-hovered' : null}`} onClick={() => setUri(link)}>
+        <div className={`subnav-component ${active ? 'subnav-component-hovered' : null}`} onClick={() => {setUri(link);window.scrollTo(0, 0);}}>
             <Link to={link}>
                 {text}
             </Link>
