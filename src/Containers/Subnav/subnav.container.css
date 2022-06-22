@@ -64,7 +64,7 @@
     .subnav-responsive-items-container {
         position: fixed;
         width: 100vw;
-        height: 0;
+        height: 281px;
         overflow: hidden;
         background-color: #12172d;
         top: 80px;
