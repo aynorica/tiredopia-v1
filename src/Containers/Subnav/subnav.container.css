@@ -57,6 +57,9 @@
 .line-hidden {
     opacity: 0;
 }
+.height-expanse {
+    height: 281px;
+}
 @media only screen and (max-width: 1200px) {
     .subnav-responsive-items-container {
         position: fixed;
