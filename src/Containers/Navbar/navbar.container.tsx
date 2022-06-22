@@ -19,7 +19,7 @@ export const NavbarContainer:React.FC = () => {
     }
     window.addEventListener("scroll", setting);
     return (
-        <div className={`nav-wrapper nav-wrapper-position ${scroll ? "nav-wrapper-bg load-the-animation" : null}`} style={{height: clicked ? '281px' : '120px'}}>
+        <div className={`nav-wrapper nav-wrapper-position ${scroll ? "nav-wrapper-bg load-the-animation" : null}`} style={{height: clicked ? '381px' : '120px'}}>
             <div className={`nav-container max-size`}>
                 <div className="nav-item nav-item-logo">
                     <LogoComponents />
