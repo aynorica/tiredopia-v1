@@ -8,6 +8,7 @@
 }
 
 .subnav-responsive-container {
+    display: none;
 }
 .subnav-responsive-container {
     display: block;
@@ -57,13 +58,13 @@
     opacity: 0;
 }
 .height-expanse {
-    height: 281px!important;
+    height: 281px;
 }
 @media only screen and (max-width: 1200px) {
     .subnav-responsive-items-container {
         position: fixed;
         width: 100vw;
-        height: 281px;
+        height: 0;
         overflow: hidden;
         background-color: #12172d;
         top: 80px;
