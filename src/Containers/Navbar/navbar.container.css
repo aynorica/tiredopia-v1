@@ -113,3 +113,16 @@
         text-align: left;
     }
 }
+
+@media only screen and (max-width: 640px) {
+    .nav-item-logo {
+        width: 20%;
+    }
+    .nav-item-social {
+        width: 60%;
+    }
+    .nav-item-subnav-responsive {
+        width: 20%;
+        text-align: left;
+    }
+}
