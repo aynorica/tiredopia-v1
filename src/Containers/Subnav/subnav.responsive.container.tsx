@@ -20,7 +20,7 @@ export const SubnavResponsiveContainer:React.FC = () => {
                     <line className="" x1="10" y1="0" x2="40" y2="0"/>
                 </svg>
             </div>
-            <div className={`subnav-responsive-items-container  ${clicked ? "height-expanse" : null}`}>
+            <div className={`subnav-responsive-items-container height-expanse ${clicked ? "height-expanse" : null}`}>
                 {
                     subNavItemsDetails.map(item => {
                         const { text, link } = item;
