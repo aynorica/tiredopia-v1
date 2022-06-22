@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useCallback, useState} from 'react';
 import './navbar.container.css';
 import {LogoComponents} from "../../Components/Logo/logo.components";
 import {SubnavContainer} from "../Subnav/subnav.container";
@@ -9,12 +9,16 @@ import {SubnavResponsiveContainer} from "../Subnav/subnav.responsive.container";
 export const NavbarContainer:React.FC = () => {
     const [scroll, setScroll] = useState(false);
     const setting = () => {
-        if(window.scrollY > 50) setScroll(true);
-        else setScroll(false)
+        if(window.scrollY >= 50 && window.scrollY <= 80) {
+            setScroll(true)
+        }
+        else if(window.scrollY < 50) {
+            setScroll(false)
+        }
     }
     window.addEventListener("scroll", setting);
     return (
-        <div className={`nav-wrapper nav-wrapper-position ${scroll ? "nav-wrapper-bg" : null}`}>
+        <div className={`nav-wrapper nav-wrapper-position ${scroll ? "nav-wrapper-bg load-the-animation" : null}`}>
             <div className={`nav-container max-size`}>
                 <div className="nav-item nav-item-logo">
                     <LogoComponents />

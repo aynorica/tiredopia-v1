@@ -1,10 +1,16 @@
 @keyframes load-down {
     0% {
-
+        top: -200px
+    }
+    100% {
+        top: 0;
     }
 }
 .nav-wrapper-bg {
     background-color: #12172d;
+}
+.load-the-animation {
+    animation: load-down 0.7s;
 }
 .nav-wrapper {
     width: 100vw;

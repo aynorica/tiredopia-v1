@@ -1,4 +1,4 @@
-import React,{Suspense} from 'react';
+import React, {Suspense, useState} from 'react';
 import './App.css';
 import {NavbarContainer} from "./Containers/Navbar/navbar.container";
 import {HomePage} from "./Pages/home.page";
@@ -12,11 +12,12 @@ import {NftPage} from "./Pages/Nft/nft.page";
 import {ContactPage} from "./Pages/Contact/contact.page";
 
 function App() {
+
   return (
     <div className="App">
 
         <Router>
-            <NavbarContainer />
+            <NavbarContainer/>
             <Routes>
                 <Route path={"/"} element={<Suspense fallback={<LoadingContainer />}><HomePage /></Suspense>}/>
                 <Route path={"/home"} element={<Suspense fallback={<LoadingContainer />}><HomePage /></Suspense>}/>
