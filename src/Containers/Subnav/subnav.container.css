@@ -58,7 +58,7 @@
     opacity: 0;
 }
 .height-expanse {
-    height: 281px;
+    height: 281px!important;
 }
 @media only screen and (max-width: 1200px) {
     .subnav-responsive-items-container {
@@ -75,5 +75,8 @@
     .subnav-responsive-items-container > div {
         padding: 15px;
         border-bottom: rgba(185, 185, 191, 0.05) 2px solid;
+    }
+    .height-expanse {
+        height: 281px!important;
     }
 }
