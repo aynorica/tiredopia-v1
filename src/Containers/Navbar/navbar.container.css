@@ -11,13 +11,14 @@
 }
 .load-the-animation {
     animation: load-down 0.7s;
+    position: fixed!important;
 }
 .nav-wrapper {
     width: 100vw;
     height: 90px;
     top: 0;
+    position: absolute;
     display: flex;
-    position: fixed;
     justify-content: center;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
