@@ -9,7 +9,7 @@ import {SubnavResponsiveContainer} from "../Subnav/subnav.responsive.container";
 export const NavbarContainer:React.FC = () => {
     const [scroll, setScroll] = useState(false);
     const setting = () => {
-        if(window.scrollY >= 50 && window.scrollY <= 80) {
+        if(window.scrollY >= 50) {
             setScroll(true)
         }
         else if(window.scrollY < 50) {
