@@ -4,8 +4,8 @@ import {subNavItemsDetails} from "./subnav.container";
 import {SubnavItemsComponent} from "../../Components/SubnavItem/subnavItems.component";
 
 
-export const SubnavResponsiveContainer:React.FC = () => {
-    const [clicked, setClicked] = useState(false);
+export const SubnavResponsiveContainer:React.FC<{clicked:boolean, setClicked:any}> = (data:{clicked:boolean, setClicked:any}) => {
+    const { clicked, setClicked } = data;
     const [uri, setUri] = useState(window.location.pathname);
     return (
         <div className="subnav-responsive-container">
@@ -20,7 +20,7 @@ export const SubnavResponsiveContainer:React.FC = () => {
                     <line className="" x1="10" y1="0" x2="40" y2="0"/>
                 </svg>
             </div>
-            <div className={`subnav-responsive-items-container height-expanse ${clicked ? "height-expanse" : null}`}>
+            <div className={`subnav-responsive-items-container ${clicked ? "height-expanse" : null}`}>
                 {
                     subNavItemsDetails.map(item => {
                         const { text, link } = item;
