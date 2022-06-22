@@ -66,7 +66,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 670px) {
     .special-btn-component {
         width: 140px;
     }
@@ -92,7 +92,7 @@
         height: 20px;
         position: absolute;
         left: 10px;
-        top: 14px;
+        top: 12px;
     }
     .special-btn-text {
         font-family: "Chakra Petch", sans-serif;

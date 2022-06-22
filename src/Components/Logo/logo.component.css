@@ -24,10 +24,10 @@
 }
 @media only screen and (max-width: 700px) {
     .logo-component h1 {
-        font-size: 17px;
+        font-size: 15px;
         letter-spacing: 1px;
     }
     .logo-component img {
-        width: 65px;
+        width: 45px;
     }
 }
