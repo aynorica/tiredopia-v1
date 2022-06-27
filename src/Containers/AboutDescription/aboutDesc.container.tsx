@@ -20,7 +20,7 @@ export const AboutDescContainer:React.FC<AboutContainerInputs> = (data:AboutCont
                 <IntroSubHeaderComponent />
             </div>
             <div className={`about-desc-container-btn about-desc-container-center ${main ? null : "about-btn-hidden"}`}>
-                <SpecialBtnComponent link={"#"} text={"Buy one"} fill={false} scale={1.1} />
+                <SpecialBtnComponent link={"https://opensea.io/collection/tiredopia"} text={"Buy one"} fill={false} scale={1.1} />
             </div>
         </div>
     )

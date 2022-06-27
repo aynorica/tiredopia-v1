@@ -7,7 +7,7 @@
     height: 42px;
     transition: all 0.4s;
     overflow: hidden;
-    background-color: #0e2230;
+    background-color: #1c4357;
 }
 .nft-utils-component:hover {
     border: 1px solid rgba(97, 197, 248, 0.75);

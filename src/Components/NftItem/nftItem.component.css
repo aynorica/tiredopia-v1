@@ -15,10 +15,10 @@
 }
 .nft-item-component {
     border: 2px solid rgba(148, 218, 255, 0.34);
-    background-color: #0e2230;
+    background-color: #1c4357;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     padding: 20px 10px 10px 10px;
     border-radius: 5px;
     transition: 0.4s ease-in-out;

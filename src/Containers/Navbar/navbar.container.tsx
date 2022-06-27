@@ -16,6 +16,7 @@ export const NavbarContainer:React.FC = () => {
         else if(window.scrollY < 450) {
             setScroll(false)
         }
+        setClicked(false)
     }
     window.addEventListener("scroll", setting);
     return (
@@ -28,7 +29,7 @@ export const NavbarContainer:React.FC = () => {
                     <SubnavContainer />
                 </div>
                 <div className="nav-item-social nav-item nav-item-right">
-                    <SpecialBtnComponent text={"follow us"} link={"#"} fill={false} icon={<TwitterLogoSvg />} scale={1} />
+                    <SpecialBtnComponent text={"follow us"} link={"https://twitter.com/tiredopia"} fill={false} icon={<TwitterLogoSvg />} scale={1} />
                 </div>
                 <div className="nav-item-subnav-responsive">
                     <SubnavResponsiveContainer clicked={clicked} setClicked={setClicked}/>
