@@ -67,7 +67,7 @@
         padding-top: 20px;
     }
     .nav-wrapper {
-        height: 110px!important;
+        height: 110px;
     }
     .nav-container {
         display: flex;
