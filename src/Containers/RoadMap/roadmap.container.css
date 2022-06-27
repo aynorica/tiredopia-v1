@@ -1,7 +1,7 @@
 .roadmap-container {
-
     min-height: 600px;
     width: 100%;
+    padding-top: 40px;
 }
 .roadmap-container-title, .roadmap-container-desc  {
     width: 100%;

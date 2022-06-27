@@ -82,4 +82,8 @@
         stroke-dasharray: 300 1150;
         stroke-dashoffset: 300;
     }
+    .roadmap-desc-component {
+        font-size: 35px;
+        text-align: center;
+    }
 }
