@@ -26,7 +26,7 @@ export const SubnavResponsiveContainer:React.FC<{clicked:boolean, setClicked:any
                         const { text, link } = item;
                         let active:boolean = uri === link;
                         if(uri === '/' && link ==='/home') active = true
-                        return <div>
+                        return <div onClick={() => setClicked(!clicked)}>
                             <SubnavItemsComponent text={text} link={link} setUri={setUri} active={active}/>
                         </div>
                     })
