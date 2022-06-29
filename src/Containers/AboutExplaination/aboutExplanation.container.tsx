@@ -11,10 +11,10 @@ export const AboutExplanationContainer:React.FC<AboutContainerInputs> = (data:Ab
     return (
         <div className="about-explanation-container">
             {
-                dataForExplanation.map((item, index) => {
-                    const { text, header } = item;
+                dataForExplanation.map((item) => {
+                    const { text, header, active } = item;
                     return <div>
-                        <AboutExplanationComponent text={text} header={header} active={index < 1} main={data.main}/>
+                        <AboutExplanationComponent text={text} header={header} active={active} main={data.main}/>
                     </div>
                 })
             }
@@ -25,17 +25,17 @@ export const AboutExplanationContainer:React.FC<AboutContainerInputs> = (data:Ab
 const dataForExplanation:AboutExplanationComponentInput[] = [
     {
         header: 'Unique, 1/1 Generated',
-        text: 'Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. Malesuada nisl at mauris cursus lorem mattis arcu.',
+        text: 'Tiredopia is a collection of uniquely generated characters. 10,000 collectibles are currently accessible through Opensea. Every character is specially designed to match the current dynamic of our world. ',
+        active: true
+    },
+    {
+        header: '10,000 digital collectibles',
+        text: 'Tiredopia offers variety of digital collectibles, the characters have been uniquely designed to portray different ',
         active: false
     },
     {
-        header: '140+ Traits In 16 Categories',
-        text: 'Ornare faucibus urna, netus ut. Ac vulputate ornare donec orci sed gravida senectus. Felis quis morbi vivamus est eget sapien magnis quis.',
-        active: false
-    },
-    {
-        header: 'Usage Rights Included',
-        text: 'Ac, bibendum duis gravida nullam. At amet nibh platea nibh interdum non, egestas bibendum iaculis. Etiam tristique ultricies tristique ullamcorper donec eget odio ut.',
+        header: 'What’s next',
+        text: 'Tiredopia collections allows it’s holders to access our next project, Cyberdom. Here users will have their own lands where they can design, create and build.',
         active: false
     },
 ]

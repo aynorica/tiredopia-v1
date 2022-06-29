@@ -12,7 +12,7 @@ export const PartnerDescriptionHeader:React.FC = () => {
 export const PartnerDescriptionSubHeader:React.FC = () => {
     return (
         <h5 className="partner-dec-sub-header">
-            Maecenas sit pretium, cras in. In quisque sem id eget. In vel gravida ut adipiscing integer felis.
+            Join us on this journey of breaking limits and creating freely.
         </h5>
     )
 }

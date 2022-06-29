@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import './nftItem.component.css';
 import {NftDetailsComponent} from "../NftDetails/nftDetails.component";
+import {ImageResponse} from "../../Models/image.response";
 
 export interface NftItemComponentInput {
-    items:NftItemComponentModel
+    items:ImageResponse
 }
 
 

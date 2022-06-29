@@ -17,7 +17,7 @@ export const AboutDescContainer:React.FC<AboutContainerInputs> = (data:AboutCont
                 <AboutHeaderComponent />
             </div>
             <div className={`about-desc-container-center ${main ? null : "about-center"}`}>
-                <IntroSubHeaderComponent />
+                <IntroSubHeaderComponent text={"Growing up in a restricted community, feeling limited under circumstances was always a problem for us. Leading to us wanting to create a world where people would not be limited to conditions. A world where people can have their own land and create freely without any limitations. "}/>
             </div>
             <div className={`about-desc-container-btn about-desc-container-center ${main ? null : "about-btn-hidden"}`}>
                 <SpecialBtnComponent link={"https://opensea.io/collection/tiredopia"} text={"Buy one"} fill={false} scale={1.1} />

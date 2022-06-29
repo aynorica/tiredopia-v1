@@ -1,10 +1,15 @@
 import React from "react";
 import './introSubHeader.component.css';
 
-export const IntroSubHeaderComponent:React.FC = () => {
+export interface IntroSubHeaderComponentInput {
+    text: string
+}
+
+export const IntroSubHeaderComponent:React.FC<IntroSubHeaderComponentInput> = (data:IntroSubHeaderComponentInput) => {
+    const { text } = data;
     return (
         <h2 className="intro-sub-header-component load-up-animation anim-delay-1">
-            A world where all unite to create what's beyond imagination. Get your one way ticket to the land of free.
+            {text}
         </h2>
     )
 }

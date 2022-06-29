@@ -1,3 +1,58 @@
 .nft-pagination-component {
+    width: 100%;
+    background-color: rgba(138, 215, 255, 0.09);
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-items: center;
+    padding: 8px;
+    border: 1px solid rgba(97, 197, 248, 0.7);
+    border-radius: 5px;
+    transform: scale(0.8);
+}
+.nft-pagination-component > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nft-pagination-component input {
+    width: 27px;
+    height: 40px;
+    background-color: rgba(138, 215, 255, 0);
+    border: none;
+    outline: none;
+    display: flex;
+    text-align: center;
+    font-family: "IBM Plex Mono",sans-serif;
+    font-size: 18px;
+    color: #8ad7ff;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.nft-pagination-component input:hover {
 
+}
+
+.nft-pagination-component svg {
+    width: 30px;
+    height: 30px;
+    stroke-width: 2px;
+    stroke: #8ad7ff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.nft-pagination-component svg:hover {
+    stroke-width: 4px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }

@@ -6,10 +6,10 @@ export const PartnerItemsContainer:React.FC = () => {
     return (
         <div className="partner-items-container">
             {
-                partnerItemsInputs.map((item, index) => {
+                partnerItemsInputs.map((item) => {
                     const { text, header, active } = item;
                     return <div className="partner-items-container-wrapper">
-                        <PartnerItemComponent text={text} header={header} active={index < 1}/>
+                        <PartnerItemComponent text={text} header={header} active={active}/>
                     </div>
                 })
             }
@@ -20,22 +20,22 @@ export const PartnerItemsContainer:React.FC = () => {
 const partnerItemsInputs:PartnerItemComponentInputs[] = [
     {
         header: 'Set Up Your Wallet',
-        text: 'Arcu morbi sit laoreet semper ultrices maecenas auctor amet. Donec tortor facilisis risus, neque sit aliquet orci, malesuada.',
+        text: 'Your wallet could be set up easily through Metamask wallet, just install the wallet from metamask.io and create or import your wallet',
+        active: true
+    },
+    {
+        header: 'Buy Your Ticket',
+        text: 'Every Tiredopia character is a ticket for Cyberdom, where users are allowed to design, create and build according to their will. ',
         active: false
     },
     {
-        header: 'Buy Your Collection',
-        text: 'Arcu morbi sit laoreet semper ultrices maecenas auctor amet. Donec tortor facilisis risus, neque sit aliquet orci, malesuada.',
-        active: false
-    },
-    {
-        header: 'Add Your NFT\'s',
-        text: 'Arcu morbi sit laoreet semper ultrices maecenas auctor amet. Donec tortor facilisis risus, neque sit aliquet orci, malesuada.',
+        header: 'Collect NFT\'s',
+        text: 'You can purchase multiple characters at a time. The characters portray different moods we go through in our daily life with unique design to them. ',
         active: false
     },
     {
         header: 'Sell Your NFT\'s',
-        text: 'Arcu morbi sit laoreet semper ultrices maecenas auctor amet. Donec tortor facilisis risus, neque sit aliquet orci, malesuada.',
+        text: 'The collection can be bought and sold through Opensea easily. Holders can buy and sell indefinitely.',
         active: false
     },
 ]

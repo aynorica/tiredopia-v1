@@ -19,8 +19,8 @@ export const FaqContainer:React.FC = () => {
                     <div className="faq-component-container">
                         {
                             faqComponentsData.map((item, index) => {
-                                const { question, description } = item;
-                                return <FaqComponent question={question} description={description} id={`faq-element-${index}`} active={index < 1}/>
+                                const { question, description, active } = item;
+                                return <FaqComponent question={question} description={description} id={`faq-element-${index}`} active={active}/>
                             })
                         }
                     </div>
@@ -34,21 +34,21 @@ export const FaqContainer:React.FC = () => {
 const faqComponentsData:FaqComponentInputs[] = [
     {
         question: "What Are The NFTs?",
-        description: "Urna vitae erat et lacus, S Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. Malesuada nisl at mauris cursus lorem mattis arcu. Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. Malesuada nisl at mauris cursus lorem mattis arcu. Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. Malesuada nisl at mauris cursus lorem mattis arcu.",
+        description: "Non-fungible token. Right, sorry. “Non-fungible” more or less means that it’s unique and can’t be replaced with something else. For example, a bitcoin is fungible — trade one for another bitcoin, and you’ll have exactly the same thing.A one-of-a-kind trading card, however, is non-fungible. If you traded it for a different card, you’d have something completely different.",
+        active: true
+    },
+    {
+        question: "How To Access Tiredopia Collection?",
+        description: "The collection can be easily accessed, purchased and resold through Opensea platform. You can also check out the collectibles on our website. After purchase you can easily sell them on the platform of your choice.",
         active: false
     },
     {
-        question: "How Do I Get NFTs?",
+        question: "Why Tiredopia's NFTs are valuable?",
         description: "Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. Malesuada nisl at mauris cursus lorem mattis arcu.",
         active: false
     },
     {
-        question: "How Can We Buy Your NFTs?",
-        description: "Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. Malesuada nisl at mauris cursus lorem mattis arcu.",
-        active: false
-    },
-    {
-        question: "What Are The NFTs?",
+        question: "When Does CYBERDOM project starts?",
         description: "Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. Malesuada nisl at mauris cursus lorem mattis arcu.",
         active: false
     },

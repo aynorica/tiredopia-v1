@@ -23,19 +23,19 @@ export const RoadmapContainer:React.FC = () => {
 
 const items:RoadmapComponentInputs[] = [
     {
-        header: 'Q2 2022',
-        listEl: ["Aenean tempor", "Fusce arcu maecenas", "Malesuada felis sem elementum", "Risus eu metus"]
+        header: 'Q1 :',
+        listEl: ["Designing characters", "Smart Conrtact", "Minting first 2,000"]
     },
     {
-        header: 'Q1 2022',
-        listEl: ["Aenean tempor", "Fusce arcu maecenas", "Malesuada felis sem elementum", "Risus eu metus"]
+        header: 'Q2 :',
+        listEl: ["Minting the final 8,000", "Smart contract", "The world meets Tiredopia"]
     },
     {
-        header: 'Q4 2022',
-        listEl: ["Aenean tempor", "Fusce arcu maecenas", "Malesuada felis sem elementum", "Risus eu metus"]
+        header: 'Q3 :',
+        listEl: ["Lands are created for holders", "Sell all characters", "Creating land for the NFT holders. "]
     },
     {
-        header: 'Q3 2022',
-        listEl: ["Aenean tempor", "Fusce arcu maecenas", "Malesuada felis sem elementum", "Risus eu metus"]
+        header: 'Q4 :',
+        listEl: ["Launch CYBERDOM", "Holders get their own lands through their characters.", "Airdrop to Tiredopia holders"]
     },
 ]

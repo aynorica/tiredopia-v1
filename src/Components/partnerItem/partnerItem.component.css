@@ -21,6 +21,7 @@
     cursor: default;
 }
 .partner-item-text {
+    max-width: 300px;
     font-family: 'IBM Plex Mono',monospace;
     font-size: 17px;
     color: #B9B9BF;

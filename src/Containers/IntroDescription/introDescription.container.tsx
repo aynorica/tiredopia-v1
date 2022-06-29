@@ -9,7 +9,7 @@ export const IntroDescriptionContainer:React.FC = () => {
     return (
         <div className="intro-description-container">
             <IntroHeaderComponent />
-            <IntroSubHeaderComponent />
+            <IntroSubHeaderComponent text={"A world where all unite to create what's beyond imagination. Get your one way ticket to the land of free."}/>
             <IntroDescriptionBtnContainer />
         </div>
     )

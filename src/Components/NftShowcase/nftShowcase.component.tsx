@@ -1,5 +1,6 @@
-import React from "react";
+import React,{Suspense} from "react";
 import './nftShowcase.component.css';
+import {LoadingContainer} from "../../Containers/Loading/loading.container";
 
 export interface NftShowcaseComponentInput {
     img: any,
@@ -10,9 +11,11 @@ export interface NftShowcaseComponentInput {
 export const NftShowcaseComponent:React.FC<NftShowcaseComponentInput> = (data:NftShowcaseComponentInput) => {
     const { img, name, alt } = data;
     return (
-        <div className="nft-showcase-component">
-            <img src={img} alt={alt}/>
-            <div>{name}</div>
-        </div>
+        <Suspense fallback={<LoadingContainer />}>
+            <div className="nft-showcase-component">
+                <img src={img} alt={alt}/>
+                <div>{name}</div>
+            </div>
+        </Suspense>
     )
 }

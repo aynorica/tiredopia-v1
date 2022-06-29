@@ -1,13 +1,14 @@
 import React from "react";
 import './nftDetails.component.css';
 import {NftItemComponentModel} from "../NftItem/nftItem.component";
+import {ImageResponse} from "../../Models/image.response";
 
 export interface NftDetailsComponentInput {
-    items:NftItemComponentModel
+    items:ImageResponse
 }
 export const NftDetailsComponent:React.FC<NftDetailsComponentInput> = (data:NftDetailsComponentInput) => {
     const {
-        attributes, name, image, file_url, external_url, custom_fields, description
+        attributes, name, image, file_url, external_url, description, dna, date
     } = data.items;
     return (
         <div className="nft-details-component">
@@ -32,10 +33,10 @@ export const NftDetailsComponent:React.FC<NftDetailsComponentInput> = (data:NftD
                         <span className="trait">URL</span>  <span className="trait-value"><a target={"_blank"} href={file_url}>{shortenText(file_url)}</a></span>
                     </li>
                     <li className="nft-details-attribute">
-                        <span className="trait">DNA</span>  <span className="trait-value">{shortenText(custom_fields.dna)}</span>
+                        <span className="trait">DNA</span>  <span className="trait-value">{shortenText(dna)}</span>
                     </li>
                     <li className="nft-details-attribute">
-                        <span className="trait">GENERATION DATE</span>  <span className="trait-value">{new Date(custom_fields.date).toDateString()}</span>
+                        <span className="trait">GENERATION DATE</span>  <span className="trait-value">{new Date(date).toDateString()}</span>
                     </li>
                 </ul>
             </div>

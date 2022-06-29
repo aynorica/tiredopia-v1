@@ -1,13 +1,33 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './nftTable.container.css';
-import {TitleComponent} from "../../Components/Title/title.component";
 import {NftSearchComponent} from "../../Components/NftSearch/nftSearch.component";
 import {NftUtilsComponent, NftUtilsComponentInput} from "../../Components/NftUtils/nftUtils.component";
 import {NftItemComponent, NftItemComponentModel} from "../../Components/NftItem/nftItem.component";
-import {nftItems} from "../Carousel/carousel.container";
+import {ImageResponse} from "../../Models/image.response";
+import axios from "axios";
+import {NftPaginationComponent} from "../../Components/NftPagination/nftPagination.component";
+import {ImageRequest, SortType} from "../../Models/image.request";
 
 
 export const NftTableContainer:React.FC = () => {
+    const [skip, setSkip] = useState<number>(0)
+    const [nfts, setNfts] = useState<ImageResponse[]>([]);
+    useEffect(() => {
+        console.log("SKIP", skip)
+        getImages({
+            pagination: {
+                get: 20,
+                skip
+            },
+            sort: {
+                attribute: "id",
+                type: SortType.ASCENDING
+            },
+            search: ""
+        }).then(res => {
+            setNfts(res)
+        })
+    }, [skip])
     return (
         <div className="bg-color">
             <div className="nft-container max-size">
@@ -23,17 +43,23 @@ export const NftTableContainer:React.FC = () => {
                 </div>
                 <div className="nft-container-items">
                     {
-                        NftItems.map((nft, index) => {
-                            nft.image = nftItems[index].img;
-                            nft.name = nftItems[index].name;
+                        nfts.map((nft) => {
                             return <NftItemComponent items={nft}/>
                         })
                     }
 
                 </div>
+                <div>
+                    <NftPaginationComponent func={setSkip} skip={skip}/>
+                </div>
             </div>
         </div>
     )
+}
+
+const getImages = async (data:ImageRequest):Promise<ImageResponse[]> => {
+    return await axios.post('https://server.tiredopia.com/get-images', data)
+        .then(res => res.data)
 }
 
 const sortItems:NftUtilsComponentInput[] = [

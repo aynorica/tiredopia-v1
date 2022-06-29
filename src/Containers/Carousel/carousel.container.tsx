@@ -1,15 +1,23 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './carousel.container.css';
 import {NftShowcaseComponent, NftShowcaseComponentInput} from "../../Components/NftShowcase/nftShowcase.component";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import {ImageResponse} from "../../Models/image.response";
+import axios from "axios";
 
 
 
 export const CarouselContainer:React.FC<{transition:number, interval:number}> = (data:{transition:number, interval:number}) => {
     const [size, setSize] = useState(+window.innerWidth);
+    const [random, setRandom] = useState<NftShowcaseComponentInput[]>([])
     const setting = () => setSize(+window.innerWidth);
     window.addEventListener("resize", setting);
+    useEffect(() => {
+        getImages().then(res => {
+            setRandom(res);
+        })
+    }, [])
     return (
         <div className="bg-color">
             <div className="carousel-container">
@@ -31,10 +39,10 @@ export const CarouselContainer:React.FC<{transition:number, interval:number}> = 
                         interval={data.interval}
                     >
                         {
-                            nftItems.map((item, index) => {
+                            random.map((item, index) => {
                                 const { alt, img, name } = item;
                                 return <div className="carousel-item">
-                                    <NftShowcaseComponent alt={alt} img={img} name={`${name}:${index}`}/>
+                                    <NftShowcaseComponent alt={alt} img={img} name={name}/>
                                 </div>
                             })
                         }
@@ -99,7 +107,19 @@ const sizeCalculator = (width:number) => {
     }
 }
 
+const getImages = async ():Promise<NftShowcaseComponentInput[]> => {
+    const data:ImageResponse[] = await axios.get('https://server.tiredopia.com/get-random')
+        .then(res => res.data)
+        .catch(e => console.log(e.message))
 
+    return data.map(image => {
+        return {
+            img: image.image,
+            name: image.name,
+            alt: image.name
+        }
+    })
+}
 
 export const nftItems:NftShowcaseComponentInput[] = [
     {
