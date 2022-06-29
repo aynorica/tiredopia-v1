@@ -10,10 +10,10 @@ import {ImageRequest, SortType} from "../../Models/image.request";
 
 
 export const NftTableContainer:React.FC = () => {
-    const [skip, setSkip] = useState<number>(0)
+    const [skip, setSkip] = useState<number>(0);
+    const [search, setSearch] = useState<string>('');
     const [nfts, setNfts] = useState<ImageResponse[]>([]);
     useEffect(() => {
-        console.log("SKIP", skip)
         getImages({
             pagination: {
                 get: 20,
@@ -23,21 +23,22 @@ export const NftTableContainer:React.FC = () => {
                 attribute: "id",
                 type: SortType.ASCENDING
             },
-            search: ""
+            search: search
         }).then(res => {
             setNfts(res)
         })
-    }, [skip])
+    }, [skip, search])
+    console.log(search)
     return (
         <div className="bg-color">
             <div className="nft-container max-size">
                 <div className="nft-container-utils">
                     <div className="nft-container-search">
-                        <NftSearchComponent searchFunction={() => {}} placeholder={"Search"} icon={true}/>
+                        <NftSearchComponent searchFunction={setSearch} placeholder={search} icon={true}/>
                     </div>
                     <div className="nft-container-lists">
                         <div className="nft-container-sort">
-                            <NftUtilsComponent items={sortItems} selectFunction={() => {}}/>
+                            {/*<NftUtilsComponent items={sortItems} selectFunction={() => {}}/>*/}
                         </div>
                     </div>
                 </div>
