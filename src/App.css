@@ -39,6 +39,9 @@
 .anim-delay-10 {
     animation-delay: 1s;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     /*background: #141A31 url("Assets/Backgrounds/bg-3.jpg");*/
     /*background-size: cover;*/
