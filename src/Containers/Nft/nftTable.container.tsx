@@ -14,6 +14,7 @@ export const NftTableContainer:React.FC = () => {
     const [search, setSearch] = useState<string>('');
     const [nfts, setNfts] = useState<ImageResponse[]>([]);
     useEffect(() => {
+        window.scrollTo(0, 0);
         getImages({
             pagination: {
                 get: 20,
@@ -28,7 +29,6 @@ export const NftTableContainer:React.FC = () => {
             setNfts(res)
         })
     }, [skip, search])
-    console.log(search)
     return (
         <div className="bg-color">
             <div className="nft-container max-size">
