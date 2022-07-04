@@ -100,6 +100,8 @@
     .about-explanation-component h6 {
         font-size: 14px;
         top: 14px;
+        max-height: 90px;
+        overflow-y: scroll;
     }
     .about-explanation-component h5 {
         font-size: 17px;

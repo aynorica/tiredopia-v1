@@ -24,7 +24,7 @@ export const AboutExplanationContainer:React.FC<AboutContainerInputs> = (data:Ab
 
 const dataForExplanation:AboutExplanationComponentInput[] = [
     {
-        header: 'Unique, 1/1 Generated',
+        header: 'What is TIREDOPIA',
         text: 'Tiredopia is a collection of uniquely generated characters. 10,000 collectibles are currently accessible through Opensea. Every character is specially designed to match the current dynamic of our world. ',
         active: true
     },
