@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './nftPagination.component.css';
 import {ImageRequest} from "../../Models/image.request";
 
@@ -8,16 +8,23 @@ export interface NftPaginationComponentInput {
 }
 export const NftPaginationComponent:React.FC<NftPaginationComponentInput> = (data:NftPaginationComponentInput) => {
     const { skip, func } = data;
+    const [num, setNum] = useState(1);
 
     return (
         <div className="nft-pagination-component">
-            <div onClick={() => func(calculateSkip(skip, false))}>
+            <div onClick={() => {
+                func(calculateSkip(skip, false))
+                if(num > 1) setNum(num-1);
+            }}>
                 <Arrow rotate={true}/>
             </div>
             <div>
-                <input step={'1'} type={"number"} min={1} max={100} defaultValue={skip + 1} onChange={(e) => func(calculateWithChange(+e.target.value))}/>
+                <input type={"number"} min={1} max={100} defaultValue={num} value={num} onChange={(e) => func(calculateWithChange(+e.target.value))}/>
             </div>
-            <div onClick={() => func(calculateSkip(skip, true))}>
+            <div onClick={() => {
+                func(calculateSkip(skip, true))
+                if(num < 100)setNum(num+1)
+            }}>
                 <Arrow rotate={false}/>
             </div>
         </div>

@@ -28,7 +28,7 @@ const items:RoadmapComponentInputs[] = [
     },
     {
         header: 'Q2 :',
-        listEl: ["Minting the final 8,000", "Smart contract", "The world meets Tiredopia"]
+        listEl: ["Smart contract", "Minting the final 8,000", "The world meets Tiredopia"]
     },
     {
         header: 'Q3 :',
