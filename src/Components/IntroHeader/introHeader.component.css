@@ -8,10 +8,11 @@
     margin: 0;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
     .intro-header-component {
         text-align: center;
         max-width: 1500px;
+        font-size: 64px;
     }
 }
 @media only screen and (max-width: 720px) {

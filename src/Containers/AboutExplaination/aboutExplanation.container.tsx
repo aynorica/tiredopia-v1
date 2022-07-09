@@ -26,7 +26,7 @@ const dataForExplanation:AboutExplanationComponentInput[] = [
     {
         header: 'What is TIREDOPIA',
         text: 'Tiredopia is a collection of uniquely generated characters. 10,000 collectibles are currently accessible through Opensea. Every character is specially designed to match the current dynamic of our world. ',
-        active: true
+        active: false
     },
     {
         header: '10,000 digital collectibles',

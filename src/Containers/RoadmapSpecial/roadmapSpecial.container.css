@@ -51,17 +51,21 @@
     position: absolute;
 }
 
+@media only screen and (max-width: 1500px) {
 
-@media only screen and (max-width: 1450px) {
-    .roadmap-special-line {
-        display: none;
-    }
     .connection-line {
         display: none;
     }
     .roadmap-connection-box {
         display: none;
     }
+}
+
+@media only screen and (max-width: 1200px) {
+    .roadmap-special-line {
+        display: none;
+    }
+
     .roadmap-special-container-component {
         position: static;
         display: flex;

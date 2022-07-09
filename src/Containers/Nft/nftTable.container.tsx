@@ -36,11 +36,7 @@ export const NftTableContainer:React.FC = () => {
                     <div className="nft-container-search">
                         <NftSearchComponent searchFunction={setSearch} placeholder={search} icon={true}/>
                     </div>
-                    <div className="nft-container-lists">
-                        <div className="nft-container-sort">
-                            {/*<NftUtilsComponent items={sortItems} selectFunction={() => {}}/>*/}
-                        </div>
-                    </div>
+
                 </div>
                 <div className="nft-container-items">
                     {

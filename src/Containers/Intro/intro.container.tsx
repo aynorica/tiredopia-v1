@@ -8,12 +8,14 @@ export const IntroContainer:React.FC = () => {
     const setting = () => setSize(window.innerHeight);
     window.addEventListener("resize", setting);
     return (
-        <div className="intro-container max-size" style={{minHeight: `${size - 350}px`}}>
-            <div className="intro-item intro-desc-item">
-                <IntroDescriptionContainer />
-            </div>
-            <div className="intro-item intro-pic-item">
-                <IntroPicComponent />
+        <div className="intro-wrapper">
+            <div className="intro-container max-size" style={{minHeight: `${size - 350}px`}}>
+                <div className="intro-item intro-desc-item">
+                    <IntroDescriptionContainer />
+                </div>
+                <div className="intro-item intro-pic-item">
+                    <IntroPicComponent />
+                </div>
             </div>
         </div>
     )

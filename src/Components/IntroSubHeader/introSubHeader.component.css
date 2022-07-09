@@ -6,10 +6,10 @@
     max-width: 550px;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
     .intro-sub-header-component {
         text-align: center;
         color: #e2e2e8;
-        font-size: 14px;
+        font-size: 17px;
     }
 }

@@ -29,7 +29,7 @@ export const NavbarContainer:React.FC = () => {
                     <SubnavContainer />
                 </div>
                 <div className="nav-item-social nav-item nav-item-right">
-                    <SpecialBtnComponent text={"follow us"} link={"https://twitter.com/tiredopia"} fill={false} icon={<TwitterLogoSvg />} scale={1} />
+                    <SpecialBtnComponent link={"https://opensea.io/collection/tiredopia"} text={"Buy one"} fill={false} scale={1} />
                 </div>
                 <div className="nav-item-subnav-responsive">
                     <SubnavResponsiveContainer clicked={clicked} setClicked={setClicked}/>

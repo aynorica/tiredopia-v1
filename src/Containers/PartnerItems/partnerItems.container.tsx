@@ -21,7 +21,7 @@ const partnerItemsInputs:PartnerItemComponentInputs[] = [
     {
         header: 'Set Up Your Wallet',
         text: 'Your wallet could be set up easily through Metamask wallet, just install the wallet from metamask.io and create or import your wallet',
-        active: true
+        active: false
     },
     {
         header: 'Buy Your Ticket',

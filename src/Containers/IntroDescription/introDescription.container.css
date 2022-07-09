@@ -1,11 +1,17 @@
 .intro-description-container {
     width: 100%;
 }
-
 @media only screen and (max-width: 1500px) {
+    .intro-description-container {
+        max-width: 600px;
+    }
+}
+@media only screen and (max-width: 1200px) {
     .intro-description-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: none;
+        margin-top: 130px;
     }
 }
