@@ -43,8 +43,6 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    /*background: #141A31 url("Assets/Backgrounds/bg-3.jpg");*/
-    /*background-size: cover;*/
     overflow-x: hidden;
     background-color: #12172d;
 }

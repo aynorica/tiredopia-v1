@@ -9,7 +9,7 @@ export const FooterDescContainer:React.FC = () => {
                 Don’t Miss Out, Join Now For Early Access
             </h5>
             <h6 className="footer-description-text">
-                Maecenas Sit Pretium, Cras In. In Quisque Sem Id Eget. In Vel Gravida Ut
+                Copyright © 2022 CYBERDOM  |   All rights reserved
             </h6>
         </div>
     )

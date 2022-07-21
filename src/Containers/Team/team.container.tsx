@@ -25,27 +25,31 @@ export const TeamContainer:React.FC = () => {
 
 export const teams:TeamCardComponentInput[] = [
     {
-        text:'Co-founder & COO',
-        img: 'https://cyboxhtml.surielementor.com/assets/images/common/team6.png',
-        link: '#',
-        header: 'Esther Howard'
+        text:'Full-Stack Developer',
+        img: 'https://imagedelivery.net/9htEsbM85VXhE8lOYQH9iw/8c93d822-9a00-42f2-bcdd-a5322c837200/public',
+        link: 'https://twitter.com/Amir63247052',
+        header: 'Amir Deilami',
+        icon_type: "twitter"
     },
     {
-        text:'Blockchain Developer',
-        img: 'https://cyboxhtml.surielementor.com/assets/images/common/team7.png',
-        link: '#',
-        header: 'Devon Lane'
+        text:'Business Developer',
+        img: 'https://imagedelivery.net/9htEsbM85VXhE8lOYQH9iw/a0fd86e8-5037-4ac1-b14b-6d412ea89700/public',
+        link: 'https://twitter.com/EdMehran',
+        header: 'Mehran Davatgar',
+        icon_type: "twitter"
     },
     {
-        text:'Backend Engineer',
-        img: 'https://cyboxhtml.surielementor.com/assets/images/common/team8.png',
-        link: '#',
-        header: 'Ralph Edwards'
+        text:'Business Developer',
+        img: 'https://imagedelivery.net/9htEsbM85VXhE8lOYQH9iw/6bd9935d-e5f8-4cbd-5153-60ddea896a00/public',
+        link: 'https://twitter.com/tahajn1',
+        header: 'Taha Jafarnejad',
+        icon_type: "twitter"
     },
     {
-        text:'Co-founder & COO',
-        img: 'https://cyboxhtml.surielementor.com/assets/images/common/team9.png',
-        link: '#',
-        header: 'Esther Howard'
+        text:'Artist',
+        img: 'https://imagedelivery.net/9htEsbM85VXhE8lOYQH9iw/825ae2f3-1988-4c99-0a82-f88be0aee000/public',
+        link: 'https://www.instagram.com/lukachikurinko/',
+        header: 'Fatemeh Deilami',
+        icon_type: "instagram"
     },
 ]

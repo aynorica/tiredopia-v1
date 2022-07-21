@@ -44,12 +44,7 @@ const faqComponentsData:FaqComponentInputs[] = [
     },
     {
         question: "Why Tiredopia's NFTs are valuable?",
-        description: "Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. Malesuada nisl at mauris cursus lorem mattis arcu.",
-        active: false
-    },
-    {
-        question: "When Does CYBERDOM project starts?",
-        description: "Gravida viverra dui aliquet eu tortor lorem et gravida. Sed amet phasellus tellus mauris auctor rhoncus. Malesuada nisl at mauris cursus lorem mattis arcu.",
+        description: "Tiredopia collections allows it’s holders to access our next project, Cyberdom. Here users will have their own lands where they can design, create and build, Also, Tiredopia offers variety of digital collectibles, the characters have been uniquely designed to portray different",
         active: false
     },
 ]

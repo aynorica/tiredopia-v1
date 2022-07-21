@@ -16,9 +16,9 @@ export const AboutTeamContainer:React.FC = () => {
             </div>
             {
                 teams.map(member => {
-                    const { header, img, link, text } = member;
+                    const { header, img, link, text, icon_type } = member;
                     return <div>
-                        <TeamCardComponent img={img} header={header} text={text} link={link} />
+                        <TeamCardComponent img={img} header={header} text={text} link={link} icon_type={icon_type} />
                     </div>
                 })
             }
