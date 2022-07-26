@@ -84,6 +84,9 @@
         display: flex;
         justify-content: right;
     }
+    .nav-item-social > div {
+        margin-right: -30px;
+    }
     .nav-item-subnav-responsive {
         width: 10%;
         display: flex;
@@ -134,5 +137,8 @@
     .nav-item-subnav-responsive {
         width: 20%;
         text-align: left;
+    }
+    .nav-item-social > div {
+        margin-right: 0;
     }
 }
